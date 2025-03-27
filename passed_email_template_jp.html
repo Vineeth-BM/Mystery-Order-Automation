@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <base target="_top">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ミステリーオーダーテスト：合格しました</title>
+    <style>
+        body {
+            font-family: 'Meiryo', 'Hiragino Sans', 'MS PGothic', sans-serif;
+            line-height: 1.6;
+            color: #333333;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .header {
+            border-bottom: 2px solid #0076c0;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        .info-section {
+            background-color: #f9f9f9;
+            border-left: 4px solid #0076c0;
+            padding: 15px;
+            margin: 20px 0;
+        }
+        .success-message {
+            background-color: #e6f7e6;
+            border: 1px solid #2e8b57;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+        .resources {
+            background-color: #f5f5f5;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+        .footer {
+            margin-top: 30px;
+            font-size: 14px;
+            color: #666666;
+            border-top: 1px solid #f0f0f0;
+            padding-top: 15px;
+        }
+        .button {
+            display: inline-block;
+            background-color: #0076c0;
+            color: white;
+            padding: 10px 15px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin: 10px 0;
+        }
+        a {
+            color: #0076c0;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h2>ミステリーオーダーテスト結果</h2>
+    </div>
+    
+    <p><?= sellerName ?>様</p>
+    
+    <div class="success-message">
+        <h3>おめでとうございます！<span style="font-size: 24px;">&#x1F389;</span></h3>
+        <p>お客様のご努力のおかげで、ミステリーオーダーテストに合格し、当社の品質基準に準拠していることをお知らせできることを嬉しく思います。ミステリーオーダーは、販売者が販売者利用規約およびその付属文書、特に品質憲章に基づく義務を遵守しているかどうかを確認する方法です。</p>
+    </div>
+    
+    <p>ミステリーオーダーの詳細を要約した<a href="<?= reportLink ?>" style="background-color: #ffffcc; padding: 2px 5px; font-weight: bold;">レポート</a>をご確認ください。</p>
+    
+    <p>以前に失敗したミステリーオーダーの結果として課された販売制限は、他の販売制限の対象となっていない限り、現在解除されています。</p>
+    
+    <p>検査スコアが100％に達していない場合は、さらに優れたサービスと製品を提供するために改善できる点をレポートでご確認ください。</p>
+    
+    <div class="resources">
+        <h4>役立つリソース：</h4>
+        <p><a href="<?= sellerSupportCenterUrl ?>">セラーサポートセンター</a>をご覧になり、ベストプラクティスや利用可能なリソースを確認し、バックオフィスの<a href="<?= qualityDashboardUrl ?>">品質インサイトダッシュボード</a>をご活用ください。</p>
+        <p>また、ご不明な点があれば、Back Marketの担当者がご質問にお答えします。</p>
+    </div>
+    
+    <div class="footer">
+        <p>敬具<br>
+        Back Market</p>
+    </div>
+</body>
+</html>
