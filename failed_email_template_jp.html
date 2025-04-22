@@ -4,7 +4,7 @@
     <base target="_top">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ミステリーオーダーテスト：合格しました</title>
+    <title>ミステリーオーダーテスト：改善が必要です</title>
     <style>
         body {
             font-family: 'Meiryo', 'Hiragino Sans', 'MS PGothic', sans-serif;
@@ -15,7 +15,7 @@
             padding: 20px;
         }
         .header {
-            border-bottom: in 2px solid #0076c0;
+            border-bottom: 2px solid #0076c0;
             padding-bottom: 10px;
             margin-bottom: 20px;
         }
@@ -25,14 +25,14 @@
             padding: 15px;
             margin: 20px 0;
         }
-        .success-message {
-            background-color: #e6f7e6;
-            border: 1px solid #2e8b57;
+        .alert-message {
+            background-color: #fff2f2;
+            border: 1px solid #e74c3c;
             padding: 15px;
             margin: 20px 0;
             border-radius: 5px;
         }
-        .resources {
+        .action-steps {
             background-color: #f5f5f5;
             padding: 15px;
             margin: 20px 0;
@@ -70,22 +70,31 @@
     
     <p><?= sellerName ?>様</p>
     
-    <div class="success-message">
-        <h3>おめでとうございます！<span style="font-size: 24px;">&#x1F389;</span></h3>
-        <p>日頃の品質向上にご尽力いただいたおかげで、ミステリーオーダーテストに合格し、当社の品質基準に準拠していることをお知らせいたします。ミステリーオーダーは、販売者が販売者利用規約および品質憲章に基づく義務を遵守しているかどうかを確認する方法です。</p>
+    <div class="alert-message">
+        <h3>改善が必要です</h3>
+        <p>このたび御社の商品についてミステリーオーダーテストを実施しましたところ、Back Marketの品質基準を満たしておらず、改善が必要と判断いたしましたことをお知らせします。ミステリーオーダーは、販売者が販売者利用規約および品質憲章に基づく義務を遵守しているかどうかを確認する方法です。</p>
     </div>
     
-    <p>ミステリーオーダーの詳細を<a href="<?= reportLink ?>" style="background-color: #ffffcc; padding: 2px 5px; font-weight: bold;">レポート</a>にてご確認ください。</p>
+    <p>ミステリーオーダーにより特定された問題の詳細を<a href="<?= reportLink ?>" style="background-color: #ffffcc; padding: 2px 5px; font-weight: bold;">詳細レポート</a>にてご確認ください。</p>
     
-    <p>以前に失敗したミステリーオーダーの結果として課された販売制限は、他の販売制限の対象となっていない限り、現在解除されています。</p>
+    <div class="action-steps">
+        <h4>次のステップ：</h4>
+        <ol>
+            <li><strong>レポートを確認してください</strong> - ミステリーオーダーレポートで特定されたすべての問題を確認してください。</li>
+            <li><strong>必要な変更を実施してください</strong> - レポートで強調された品質上の懸念に対処するための改善を早急に実施してください。</li>
+            <li><strong>改善計画を作成してください</strong> - これらの問題が再発しないようにするための包括的な計画を作成してください。</li>
+            <li><strong>Back Market担当者に連絡してください</strong> - 改善計画について話し合い、不明な点についてガイダンスを受けてください。</li>
+        </ol>
+        <p><strong>注意：</strong> 特定された問題が解決されるまで、販売制限が課される場合があります。改善を確認するために、将来的に別のミステリーオーダーが実施される可能性があります。</p>
+    </div>
     
-    <p>検査スコアが100％に達していない場合は、さらに優れたサービスと製品を提供するために改善できる点をレポートでご確認ください。</p>
-    
-    <div class="resources">
-        <h4>お役立ち情報：</h4>
+    <div class="info-section">
+        <h4>役立つリソース：</h4>
         <p><a href="https://drive.google.com/drive/u/0/folders/1UvnSv6Knxu0-VHu01KFn7MP8A8pYmML4">セラーサポートセンター</a>をご覧になり、ベストプラクティスや利用可能なリソースを確認し、バックオフィス管理画面の<a href="<?= qualityDashboardUrl ?>">品質インサイトダッシュボード</a>をご活用ください。</p>
-        <p>また、ご不明な点があれば、Back Marketの担当者までお知らせください。</p>
+        <p>Back Market担当者は、このプロセス中のサポートを提供し、ご質問にお答えいたします。</p>
     </div>
+    
+    <p>私たちはお客様とのパートナーシップを大切にし、お客様の成功を支援することに尽力しています。これらの品質上の懸念に対処することで、お客様にとってより良い体験を確保し、お客様のビジネスの継続的な成長を実現できます。</p>
     
     <div class="footer">
         <p>どうぞよろしくお願いいたします。<br>
